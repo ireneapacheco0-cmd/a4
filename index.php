@@ -43,8 +43,13 @@
     <!-- Header Start -->
 	<header class="main-header">
         <div class="container">
-            <div class="header-row">
-                <!-- Nav Links Left -->
+            <div class="header-brand-wrap">
+                <a class="navbar-brand" href="index.php">
+                    WearCraft <span>Daily</span>
+                </a>
+            </div>
+            
+            <div class="header-menu-row">
                 <nav class="d-none d-lg-block">
                     <ul class="header-nav">
                         <li><a class="active" href="index.php">Home</a></li>                                
@@ -54,12 +59,6 @@
                     </ul>
                 </nav>
                 
-                <!-- Logo Center -->
-                <a class="navbar-brand" href="index.php">
-                    WearCraft <span>Daily</span>
-                </a>
-                
-                <!-- Actions Right -->
                 <div class="header-actions">
                     <a href="contact.html"><i class="fa-regular fa-user"></i> Account</a>
                     <a href="blog.html"><i class="fa-solid fa-basket-shopping"></i> Cart</a>
@@ -69,153 +68,228 @@
 	</header>
 	<!-- Header End -->
    
-    <!-- Split Hero Section Start (Image Section 1) -->
-    <div class="split-hero">
-        <!-- Left: Huge Vertical Image -->
-        <img src="assets/img/hero.jpg" alt="Tailor-made wool coat model" class="hero-left-img" data-reveal="left">
-        
-        <!-- Right: Content Panel -->
-        <div class="hero-right-content" data-reveal="right">
-            <span>Tailor Outerwear Atelier</span>
-            <h1>Crafting jackets with absolute seam strength</h1>
-            <p>We analyze wool weave weights, thread tension, and armpit flex parameters to make warm coats that move with you.</p>
-            <div class="d-flex gap-3">
-                <a href="contact.html" class="btn-default">Book Consultation</a>
-                <a href="blog.html" class="btn-default" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-color);">View Weave Logs</a>
+    <!-- Layered Frame Hero Section Start (Image Section 1) -->
+    <section class="hero-layered">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left: Text Panel -->
+                <div class="hero-text-panel" data-reveal="left">
+                    <span>Tailor Outerwear Atelier</span>
+                    <h1>Crafting jackets with absolute seam strength</h1>
+                    <p>We analyze wool weave weights, thread tension, and armpit flex parameters to make warm coats that move with you.</p>
+                    <div class="d-flex gap-3">
+                        <a href="contact.html" class="btn-default">Book Consultation</a>
+                        <a href="blog.html" class="btn-default" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-color);">View Weave Logs</a>
+                    </div>
+                </div>
+                
+                <!-- Right: Layered Image Frame -->
+                <div class="hero-frame-wrap" data-reveal="right">
+                    <img src="assets/img/hero.jpg" alt="Tailor-made wool coat model" class="hero-main-frame">
+                    <div class="hero-badge-overlay">
+                        <span>Loom<br>Craft</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Hero Section End -->
 
-    <!-- Craft Coordinates Section Start -->
-    <div class="craft-coordinates">
+    <!-- Master Atelier Section Start (Image Section 2) -->
+    <section class="atelier-split">
         <div class="container">
-            <div class="specs-grid">
-                <!-- Spec 1 -->
-                <div class="spec-box" data-reveal="zoom">
-                    <h3>Double-Stitch Seams</h3>
-                    <p>We double-stitch our jackets with thick polyester threads, reinforcing high-tension zones to prevent panel separation.</p>
+            <div class="atelier-grid">
+                <!-- Left: Asymmetric Cropped Photo -->
+                <div class="atelier-img-box" data-reveal="left">
+                    <img src="assets/img/about_him.jpg" alt="Master tailor drafting wool coat template">
                 </div>
                 
-                <!-- Spec 2 -->
-                <div class="spec-box" data-reveal="zoom">
-                    <h3>Martindale Abrasion</h3>
-                    <p>Our fabrics are tested up to forty thousand rub cycles, protecting coat elbows and pockets from heavy wear.</p>
-                </div>
-                
-                <!-- Spec 3 -->
-                <div class="spec-box" data-reveal="zoom">
-                    <h3>Plant Dye Baths</h3>
-                    <p>We dye our wool yarns in natural walnut husks and pomegranate peels, coloring fabrics without harsh metal chemicals.</p>
+                <!-- Right: Stacked Specs Rows -->
+                <div class="atelier-specs-wrap" data-reveal="right">
+                    <!-- Row 1 -->
+                    <div class="specs-row">
+                        <span class="specs-num">01</span>
+                        <div class="specs-text">
+                            <h3>Double-Stitch Seams</h3>
+                            <p>We double-stitch our jackets with thick polyester threads, reinforcing high-tension zones to prevent panel separation.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="specs-row">
+                        <span class="specs-num">02</span>
+                        <div class="specs-text">
+                            <h3>Martindale Abrasion</h3>
+                            <p>Our fabrics are tested up to forty thousand rub cycles, protecting coat elbows and pockets from heavy wear.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 3 -->
+                    <div class="specs-row">
+                        <span class="specs-num">03</span>
+                        <div class="specs-text">
+                            <h3>Plant Dye Baths</h3>
+                            <p>We dye our wool yarns in natural walnut husks and pomegranate peels, coloring fabrics without harsh metal chemicals.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Craft Coordinates End -->
+    </section>
+    <!-- Master Atelier End -->
 
-    <!-- Outerwear Silhouettes Section Start (Image Section 2) -->
-    <div class="silhouettes-section">
+    <!-- Silhouette Showcase Section Start (Image Section 3) -->
+    <section class="showcase-section">
         <div class="container">
             <div class="section-title" data-reveal>
-                <span>Silhouette Archives</span>
-                <h2>Offset tailored jacket cuts</h2>
+                <span>Silhouette Showcase</span>
+                <h2>Staggered jacket silhouettes</h2>
             </div>
             
-            <div class="offset-grid">
-                <!-- Card 1 (Elevated) -->
-                <div class="silhouette-card card-elevated" data-reveal="zoom">
-                    <img src="assets/img/about_her.jpg" alt="Hiking Windbreakers">
-                    <div class="silhouette-body">
-                        <h3>Hiking Windbreakers</h3>
-                        <p>Lightweight shell fabrics treated with organic waxes to keep out rain and block cold mountain winds.</p>
-                        <a href="blog.html" class="btn-default mt-4 w-100 text-center">View Specs</a>
+            <div class="staggered-grid-4">
+                <!-- Card 1 (Tall Aspect) -->
+                <div class="showcase-card ratio-tall" data-reveal="zoom">
+                    <img src="assets/img/about_her.jpg" alt="Hiking Windbreakers" style="height: 260px;">
+                    <div class="showcase-body">
+                        <h3>Hiking Shells</h3>
+                        <p>Lightweight shell fabrics treated with organic waxes to block mountain winds.</p>
                     </div>
                 </div>
                 
-                <!-- Card 2 (Normal Height) -->
-                <div class="silhouette-card" data-reveal="zoom">
-                    <img src="assets/img/coll_1.jpg" alt="Heritage Waxed Jackets">
-                    <div class="silhouette-body">
-                        <h3>Heritage Waxed Jackets</h3>
-                        <p>Stiff organic duck canvas panels paraffin-coated to create a protective rain-proof layer.</p>
-                        <a href="blog.html" class="btn-default mt-4 w-100 text-center">View Specs</a>
+                <!-- Card 2 (Square Aspect) -->
+                <div class="showcase-card ratio-square" data-reveal="zoom">
+                    <img src="assets/img/coll_1.jpg" alt="Heritage Waxed Jackets" style="height: 160px;">
+                    <div class="showcase-body">
+                        <h3>Waxed Canvas</h3>
+                        <p>Stiff organic canvas paraffin-coated to create rain-proof layers.</p>
                     </div>
                 </div>
                 
-                <!-- Card 3 (Lowered) -->
-                <div class="silhouette-card card-lowered" data-reveal="zoom">
-                    <img src="assets/img/coll_2.jpg" alt="Urban Tailored Parkas">
-                    <div class="silhouette-body">
-                        <h3>Urban Tailored Parkas</h3>
-                        <p>Long-cut wool coats designed with deep insulated linings to maintain warmth in city winter freezes.</p>
-                        <a href="blog.html" class="btn-default mt-4 w-100 text-center">View Specs</a>
+                <!-- Card 3 (Square Aspect) -->
+                <div class="showcase-card ratio-square" data-reveal="zoom">
+                    <img src="assets/img/coll_2.jpg" alt="Urban Tailored Parkas" style="height: 160px;">
+                    <div class="showcase-body">
+                        <h3>Tailored Parkas</h3>
+                        <p>Long wool coats designed with deep insulated lining panels.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 4 (Tall Aspect) -->
+                <div class="showcase-card ratio-tall" data-reveal="zoom">
+                    <img src="assets/img/coll_3.jpg" alt="Vintage Trench Coats" style="height: 260px;">
+                    <div class="showcase-body">
+                        <h3>Trench Archives</h3>
+                        <p>Double-breasted trench coats cut from organic gabardine twills.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Outerwear Silhouettes Section End -->
+    </section>
+    <!-- Silhouette Showcase Section End -->
 
-    <!-- Tailoring Details Section Start (Image Section 3) -->
-    <div class="tailoring-details">
+    <!-- Fabric Analytics Section Start -->
+    <section class="analytics-section">
         <div class="container">
-            <!-- Row 1 -->
-            <div class="detail-row" data-reveal="left">
-                <div class="detail-img">
-                    <img src="assets/img/coll_3.jpg" alt="Measuring wool fabric weave">
-                </div>
-                <div class="detail-content">
-                    <span>Weave Test // Stage 01</span>
-                    <h3>Sourcing extra-long fibers</h3>
-                    <p>We select certified organic sheep wool and long-staple cotton crops. Coarse yarn counts provide the density needed to block cold drafts, while keeping fabrics soft and comfortable for daily wear.</p>
-                    <a href="about.html" class="btn-default">Read Fiber Log</a>
-                </div>
+            <div class="section-title" data-reveal>
+                <span>Technical Calibrations</span>
+                <h2>Fabric Analytics</h2>
             </div>
             
-            <!-- Row 2 (Reverse layout) -->
-            <div class="detail-row reverse" data-reveal="right">
-                <div class="detail-img">
-                    <img src="assets/img/prod_1.jpg" alt="Vintage sewing details close-up">
+            <div class="analytics-grid" data-reveal>
+                <!-- Gauge 1 -->
+                <div class="analytics-card">
+                    <div class="chart-box">
+                        <svg class="chart-svg" width="160" height="160">
+                            <circle class="chart-bg-circle" cx="80" cy="80" r="70"></circle>
+                            <circle class="chart-progress-circle" cx="80" cy="80" r="70" data-percentage="92"></circle>
+                        </svg>
+                        <div class="chart-label">0%</div>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Wind Blocking Efficiency</h3>
+                        <p>Density level measured against sub-zero mountain draft speeds.</p>
+                    </div>
                 </div>
-                <div class="detail-content">
-                    <span>Stitch Audit // Stage 02</span>
-                    <h3>Locked needle settings</h3>
-                    <p>We calibrate our vintage sewing machines to space needle holes at exactly five stitches per centimeter. This density protects fabric seams from pulling apart under heavy backpack loads or arm turns.</p>
-                    <a href="about.html" class="btn-default">Read Seam Log</a>
+                
+                <!-- Gauge 2 -->
+                <div class="analytics-card">
+                    <div class="chart-box">
+                        <svg class="chart-svg" width="160" height="160">
+                            <circle class="chart-bg-circle" cx="80" cy="80" r="70"></circle>
+                            <circle class="chart-progress-circle" cx="80" cy="80" r="70" data-percentage="84"></circle>
+                        </svg>
+                        <div class="chart-label">0%</div>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Tensile Seam Holds</h3>
+                        <p>Force tolerances verified on flat lock double-stitch panels.</p>
+                    </div>
+                </div>
+                
+                <!-- Gauge 3 -->
+                <div class="analytics-card">
+                    <div class="chart-box">
+                        <svg class="chart-svg" width="160" height="160">
+                            <circle class="chart-bg-circle" cx="80" cy="80" r="70"></circle>
+                            <circle class="chart-progress-circle" cx="80" cy="80" r="70" data-percentage="78"></circle>
+                        </svg>
+                        <div class="chart-label">0%</div>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Organic Wool Content</h3>
+                        <p>Percentage of local long-staple threads woven without synthetic fillers.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Tailoring Details End -->
+    </section>
+    <!-- Fabric Analytics End -->
 
-    <!-- Atelier Metrics Section Start -->
-    <div class="metrics-section">
+    <!-- Expedition Chronicles Section Start -->
+    <section class="expedition-chronicles">
         <div class="container">
-            <div class="metrics-grid" data-reveal>
-                <!-- Metric 1 -->
-                <div class="metric-card">
-                    <h2 class="counter-value" data-target="1200" data-suffix="+">0+</h2>
-                    <h3>Tailoring Hours</h3>
-                    <p>Dedicated to custom drafting, shoulder sleeve padding, and pocket settings.</p>
+            <div class="section-title" data-reveal>
+                <span>Atelier Diaries</span>
+                <h2>Expedition logs</h2>
+            </div>
+            
+            <div class="chronicles-grid">
+                <!-- Chronicle 1 -->
+                <div class="chronicle-card" data-reveal="zoom">
+                    <img src="assets/img/prod_1.jpg" alt="Measuring wool fabric weave">
+                    <div class="chronicle-body">
+                        <span>Weave Test // Stage 01</span>
+                        <h3>Sourcing extra-long fibers</h3>
+                        <p>We select certified organic sheep wool and long-staple cotton crops to achieve dense, windproof panels.</p>
+                        <a href="about.html" class="btn-default">Read Log</a>
+                    </div>
                 </div>
                 
-                <!-- Metric 2 -->
-                <div class="metric-card">
-                    <h2 class="counter-value" data-target="450" data-suffix="+">0+</h2>
-                    <h3>Seam Tensile Tests</h3>
-                    <p>Performed on mechanical pull gauges to verify thread breaking points.</p>
+                <!-- Chronicle 2 -->
+                <div class="chronicle-card" data-reveal="zoom">
+                    <img src="assets/img/prod_2.jpg" alt="Vintage sewing detail close">
+                    <div class="chronicle-body">
+                        <span>Stitch Audit // Stage 02</span>
+                        <h3>Locked needle clearances</h3>
+                        <p>We calibrate our vintage sewing frames to maintain clean loop timing and prevent puckered seams.</p>
+                        <a href="about.html" class="btn-default">Read Log</a>
+                    </div>
                 </div>
                 
-                <!-- Metric 3 -->
-                <div class="metric-card">
-                    <h2 class="counter-value" data-target="25" data-suffix="+">0+</h2>
-                    <h3>Natural Fabrics</h3>
-                    <p>Sourced from sustainable local sheep runs and hemp crop spinners.</p>
+                <!-- Chronicle 3 -->
+                <div class="chronicle-card" data-reveal="zoom">
+                    <img src="assets/img/prod_3.jpg" alt="Winter coat fabric details">
+                    <div class="chronicle-body">
+                        <span>Wear Check // Stage 03</span>
+                        <h3>Cold weather flex tests</h3>
+                        <p>Evaluating folding cracks on paraffin canvas linings under freezing storage temperatures.</p>
+                        <a href="about.html" class="btn-default">Read Log</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Atelier Metrics End -->
+    </section>
+    <!-- Expedition Chronicles End -->
 
     <!-- Flat Grid Footer Start -->
     <footer class="flat-footer">

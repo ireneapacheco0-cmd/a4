@@ -19,34 +19,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Numerical counter roll-up animation
-    const counters = document.querySelectorAll('.counter-value');
-    if (counters.length > 0) {
-        const counterObserver = new IntersectionObserver((entries) => {
+    // Circular SVG Progress Chart animation
+    const progressCircles = document.querySelectorAll('.chart-progress-circle');
+    if (progressCircles.length > 0) {
+        const chartObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const target = entry.target;
-                    const endValue = parseInt(target.getAttribute('data-target'), 10);
-                    let startValue = 0;
-                    const duration = 1500; // 1.5s duration
-                    const stepTime = Math.abs(Math.floor(duration / endValue));
+                    const circle = entry.target;
+                    const percentage = parseInt(circle.getAttribute('data-percentage'), 10);
+                    const circumference = 440; // 2 * pi * r (r=70)
+                    const offset = circumference - (circumference * percentage / 100);
                     
-                    const timer = setInterval(() => {
-                        startValue += 1;
-                        target.textContent = startValue + (target.getAttribute('data-suffix') || '');
-                        if (startValue >= endValue) {
-                            target.textContent = endValue + (target.getAttribute('data-suffix') || '');
-                            clearInterval(timer);
-                        }
-                    }, Math.max(stepTime, 10));
+                    circle.style.strokeDashoffset = offset;
                     
-                    counterObserver.unobserve(target);
+                    // Also rollup numbers inside the chart
+                    const label = circle.closest('.chart-box').querySelector('.chart-label');
+                    if (label) {
+                        let val = 0;
+                        const duration = 1500;
+                        const step = Math.abs(Math.floor(duration / percentage));
+                        const timer = setInterval(() => {
+                            val += 1;
+                            label.textContent = val + '%';
+                            if (val >= percentage) {
+                                label.textContent = percentage + '%';
+                                clearInterval(timer);
+                            }
+                        }, Math.max(step, 10));
+                    }
+                    
+                    chartObserver.unobserve(circle);
                 }
             });
         }, {
             threshold: 0.5
         });
 
-        counters.forEach(c => counterObserver.observe(c));
+        progressCircles.forEach(c => chartObserver.observe(c));
     }
 });
